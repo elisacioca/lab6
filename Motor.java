@@ -4,6 +4,10 @@ public class Motor implements Componenta {
     private int CapacitateCilindrica;
     private String Combustibil;
 
+    public Motor(){
+
+    }
+
     public Motor(int _Putere, int _Turatie, int _CapacitateCilindrica, String _Combustibil)
     {
         _Putere = Putere;
