@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Masina.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;JavaApplication1&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">Laborator6</a> &gt; <span class="el_source">Masina.java</span></div><h1>Masina.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Laborator6;
+
+import java.util.ArrayList;
+
+public class Masina {
+    private String marca;
+    private String culoare;
+    private int anProductie;
+    private int numarUsi;
+    private int garantie;
+<span class="fc" id="L16">    private ArrayList&lt;Componenta&gt; componente = new ArrayList&lt;Componenta&gt;();</span>
+
+<span class="fc" id="L18">    public Masina() {</span>
+<span class="fc" id="L19">    }</span>
+
+<span class="fc" id="L21">    public Masina(String marca, String culoare, int anProductie, int numarUsi, int garantie){</span>
+<span class="fc" id="L22">        this.marca = marca;</span>
+<span class="fc" id="L23">        this.culoare = culoare;</span>
+<span class="fc" id="L24">        this.anProductie = anProductie;</span>
+<span class="fc" id="L25">        this.numarUsi = numarUsi;</span>
+<span class="fc" id="L26">        this.garantie = garantie;</span>
+<span class="fc" id="L27">        this.componente.clear();</span>
+<span class="fc" id="L28">    }</span>
+
+    public void addComponent(Componenta componenta){
+<span class="fc" id="L31">        this.getComponente().add(componenta);</span>
+<span class="fc" id="L32">    }</span>
+
+    public String getMarca() {
+<span class="fc" id="L35">        return marca;</span>
+    }
+
+    public void setMarca(String marca) {
+<span class="fc" id="L39">        this.marca = marca;</span>
+<span class="fc" id="L40">    }</span>
+
+    public String getCuloare() {
+<span class="fc" id="L43">        return culoare;</span>
+    }
+
+    public void setCuloare(String culoare) {
+<span class="fc" id="L47">        this.culoare = culoare;</span>
+<span class="fc" id="L48">    }</span>
+
+    public int getAnProductie() {
+<span class="fc" id="L51">        return anProductie;</span>
+    }
+
+    public void setAnProductie(int anProductie) {
+<span class="fc" id="L55">        this.anProductie = anProductie;</span>
+<span class="fc" id="L56">    }</span>
+
+    public int getNumarUsi() {
+<span class="fc" id="L59">        return numarUsi;</span>
+    }
+
+    public void setNumarUsi(int numarUsi) {
+<span class="fc" id="L63">        this.numarUsi = numarUsi;</span>
+<span class="fc" id="L64">    }</span>
+
+    public int getGarantie() {
+<span class="fc" id="L67">        return garantie;</span>
+    }
+
+    public void setGarantie(int garantie) {
+<span class="fc" id="L71">        this.garantie = garantie;</span>
+<span class="fc" id="L72">    }</span>
+
+    public ArrayList&lt;Componenta&gt; getComponente() {
+<span class="fc" id="L75">        return componente;</span>
+    }
+
+    public void setComponente(Componenta...components) {
+
+<span class="nc bnc" id="L80" title="All 2 branches missed.">        for(int i=0; i&lt;components.length; i++)</span>
+<span class="nc" id="L81">            this.componente.add(components[i]);</span>
+<span class="nc" id="L82">    }</span>
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>
