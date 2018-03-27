@@ -75,11 +75,8 @@ public class Masina {
         return componente;
     }
 
-<<<<<<< HEAD
-     public void setComponente(Componenta...components) {
-=======
     public void setComponente(Componenta...components) {
->>>>>>> c5063bdedf5e60c6c1b4d69c39d81063e4868c20
+
         for(int i=0; i<components.length; i++)
             this.componente.add(components[i]);
     }
