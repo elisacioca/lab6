@@ -1,9 +1,14 @@
+package Laborator6;
 
 public class Caroserie implements Componenta {
 
     private String Culoare;
     private String Material;
 
+    public Caroserie (){
+    
+    }
+    
     public Caroserie(String _culoare, String _material) {
         Culoare = _culoare;
         Material = _material;

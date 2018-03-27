@@ -1,3 +1,5 @@
+package Laborator6;
+
 public class CutieDeViteze implements Componenta{
 
     private int trepteViteza;

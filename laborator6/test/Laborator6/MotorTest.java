@@ -1,13 +1,47 @@
-import org.junit.Test;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Laborator6;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ *
+ * @author lenovo
+ */
 public class MotorTest {
+    
+    public MotorTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
 
-    @Test
+     @Test
     public void given_putere_when_putere_is_500() {
         Motor motor = new Motor(500,100,10,"gas");
-        assert(motor.getPutere()==500);
+        int expResult = 500;
+        assert(motor.getPutere() == expResult);
     }
 
     @Test
@@ -46,13 +80,26 @@ public class MotorTest {
     @Test
     public void given_combustibil_when_combustibil_is_gas() {
         Motor motor = new Motor(100,200,30,"gas");
-        assert(motor.getCombustibil().equals("gas"));
+        assertEquals (motor.getCombustibil(),"gas");
     }
 
     @Test
     public void given_combustibil_when_setCombustibil_is_gas() {
         Motor motor = new Motor();
         motor.setCombustibil("gas");
-        assert(motor.getCombustibil().equals("gas"));
+        assertEquals (motor.getCombustibil(),"gas");
     }
+    
+    /*
+    @Test
+    public void testGetPutere() {
+        System.out.println("getPutere");
+        Motor instance = null;
+        int expResult = 0;
+        int result = instance.getPutere();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    */
 }

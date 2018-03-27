@@ -1,3 +1,5 @@
+package Laborator6;
+
 public class Anvelope implements Componenta {
     private int Diametru;
     private int Anotimp;

@@ -1,15 +1,21 @@
+package Laborator6;
+
 public class Motor implements Componenta {
     private int Putere;
     private int Turatie;
     private int CapacitateCilindrica;
     private String Combustibil;
 
+    public Motor (){
+        
+    }
+    
     public Motor(int _Putere, int _Turatie, int _CapacitateCilindrica, String _Combustibil)
     {
-        _Putere = Putere;
-        _Turatie = Turatie;
-        _CapacitateCilindrica = CapacitateCilindrica;
-        _Combustibil = Combustibil;
+        this.Putere = _Putere;
+        this.Turatie = _Turatie;
+        this.CapacitateCilindrica = _CapacitateCilindrica;
+        this.Combustibil = _Combustibil;
     }
 
 
@@ -18,7 +24,7 @@ public class Motor implements Componenta {
     }
 
     public void setPutere(int _putere) {
-        Putere = _putere;
+        this.Putere = _putere;
     }
 
     public int getTuratie() {
@@ -26,7 +32,7 @@ public class Motor implements Componenta {
     }
 
     public void setTuratie(int _turatie) {
-        Turatie = _turatie;
+        this.Turatie = _turatie;
     }
 
     public int getCapacitateCilindrica() {
@@ -34,7 +40,7 @@ public class Motor implements Componenta {
     }
 
     public void setCapacitateCilindrica(int _capacitateCilindrica) {
-        CapacitateCilindrica = _capacitateCilindrica;
+        this.CapacitateCilindrica = _capacitateCilindrica;
     }
 
     public String getCombustibil() {
@@ -42,6 +48,6 @@ public class Motor implements Componenta {
     }
 
     public void setCombustibil(String _combustibil) {
-        Combustibil = _combustibil;
+        this.Combustibil = _combustibil;
     }
 }

@@ -5,17 +5,78 @@
  */
 package Laborator6;
 
-/**
- *
- * @author lenovo
- */
-public class Masina {
+import java.util.ArrayList;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Masina {
+    private String marca;
+    private String culoare;
+    private int anProductie;
+    private int numarUsi;
+    private int garantie;
+    private ArrayList<Componenta> componente = new ArrayList<Componenta>();
+
+    public Masina() {
     }
-    
+
+    public Masina(String marca, String culoare, int anProductie, int numarUsi, int garantie){
+        this.marca = marca;
+        this.culoare = culoare;
+        this.anProductie = anProductie;
+        this.numarUsi = numarUsi;
+        this.garantie = garantie;
+        this.componente.clear();
+    }
+
+    public void addComponent(Componenta componenta){
+        this.getComponente().add(componenta);
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getCuloare() {
+        return culoare;
+    }
+
+    public void setCuloare(String culoare) {
+        this.culoare = culoare;
+    }
+
+    public int getAnProductie() {
+        return anProductie;
+    }
+
+    public void setAnProductie(int anProductie) {
+        this.anProductie = anProductie;
+    }
+
+    public int getNumarUsi() {
+        return numarUsi;
+    }
+
+    public void setNumarUsi(int numarUsi) {
+        this.numarUsi = numarUsi;
+    }
+
+    public int getGarantie() {
+        return garantie;
+    }
+
+    public void setGarantie(int garantie) {
+        this.garantie = garantie;
+    }
+
+    public ArrayList<Componenta> getComponente() {
+        return componente;
+    }
+
+    public void setComponente(ArrayList<Componenta> componente) {
+        this.componente = componente;
+    }
 }
+
