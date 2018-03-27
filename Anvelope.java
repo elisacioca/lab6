@@ -1,5 +1,5 @@
 
-public class Anvelope implements Component {
+public class Anvelope implements Componenta {
     private int Diametru;
     private int Anotimp;
 

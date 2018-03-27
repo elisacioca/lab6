@@ -1,5 +1,5 @@
 
-public class Caroserie implements Component {
+public class Caroserie implements Componenta {
 
     private String Culoare;
     private String Material;

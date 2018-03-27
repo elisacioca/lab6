@@ -1,4 +1,4 @@
-public class Motor implements Component {
+public class Motor implements Componenta {
     private int Putere;
     private int Turatie;
     private int CapacitateCilindrica;
