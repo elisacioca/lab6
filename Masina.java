@@ -1,0 +1,62 @@
+import java.util.ArrayList;
+
+public class Masina {
+    private String marca;
+    private String culoare;
+    private int anProductie;
+    private int numarUsi;
+    private int garantie;
+    private ArrayList<Componenta> componente = new ArrayList<Componenta>();
+
+    public void addComponent(Componenta componenta){
+        this.getComponente().add(componenta);
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getCuloare() {
+        return culoare;
+    }
+
+    public void setCuloare(String culoare) {
+        this.culoare = culoare;
+    }
+
+    public int getAnProductie() {
+        return anProductie;
+    }
+
+    public void setAnProductie(int anProductie) {
+        this.anProductie = anProductie;
+    }
+
+    public int getNumarUsi() {
+        return numarUsi;
+    }
+
+    public void setNumarUsi(int numarUsi) {
+        this.numarUsi = numarUsi;
+    }
+
+    public int getGarantie() {
+        return garantie;
+    }
+
+    public void setGarantie(int garantie) {
+        this.garantie = garantie;
+    }
+
+    public ArrayList<Componenta> getComponente() {
+        return componente;
+    }
+
+    public void setComponente(ArrayList<Componenta> componente) {
+        this.componente = componente;
+    }
+}
