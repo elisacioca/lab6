@@ -75,8 +75,9 @@ public class Masina {
         return componente;
     }
 
-    public void setComponente(ArrayList<Componenta> componente) {
-        this.componente = componente;
+     public void setComponente(Componenta...components) {
+        for(int i=0; i<components.length; i++)
+            this.componente.add(components[i]);
     }
 }
 

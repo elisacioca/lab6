@@ -35,40 +35,36 @@ public class CaroserieTest {
 
     @Test
     public void given_culoare_when_culoare_is_red() {
+        System.out.println("given_culoare_when_culoare_is_red");
         Caroserie caroserie = new Caroserie("red","wood");
-        assert(caroserie.getCuloare().equals("red"));
+        String expResult = "red";
+        assertEquals (caroserie.getCuloare(), expResult);
     }
 
     @Test
     public void given_culoare_when_setCuloare_is_white() {
+        System.out.println("given_culoare_when_setCuloare_is_white");
         Caroserie caroserie = new Caroserie();
         caroserie.setCuloare("white");
-        assert(caroserie.getCuloare().equals("white"));
+        String expResult = "white";
+        assertEquals (caroserie.getCuloare(), expResult);
     }
 
     @Test
     public void given_material_when_material_is_paper() {
+        System.out.println("given_material_when_material_is_paper");
         Caroserie caroserie = new Caroserie("black","paper");
-        assert(caroserie.getMaterial().equals("paper"));
+        String expResult = "paper"; // ????
+        assertEquals (caroserie.getMaterial(), expResult);
     }
 
     @Test
     public void given_material_when_setMaterial_is_aluminium() {
+        System.out.println("given_material_when_setMaterial_is_aluminium");
         Caroserie caroserie = new Caroserie();
         caroserie.setMaterial("aluminium");
-        assert(caroserie.getMaterial().equals("aluminium"));
+        String expResult = "aluminium";
+        assertEquals (caroserie.getMaterial(),expResult);
     }
-    /*
-    @Test
-    public void testGetCuloare() {
-        System.out.println("getCuloare");
-        Caroserie instance = null;
-        String expResult = "";
-        String result = instance.getCuloare();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-   */
+    
 }

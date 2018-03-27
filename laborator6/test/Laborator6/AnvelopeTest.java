@@ -23,6 +23,13 @@ public class AnvelopeTest {
     
     @BeforeClass
     public static void setUpClass() {
+        Anvelope anvelopa = new Anvelope(100,1);
+        Anvelope anvelopa2 = new Anvelope();
+        Masina masina = new Masina();
+        masina.addComponent(anvelopa);
+        masina.addComponent(anvelopa2);
+        
+        System.out.println("anvelope can be added to car. this message will only be shown once");
     }
     
     @AfterClass
@@ -31,6 +38,10 @@ public class AnvelopeTest {
     
     @Before
     public void setUp() {
+        Anvelope anvelopa = new Anvelope(100,1);
+        Anvelope anvelopa2 = new Anvelope();
+        System.out.println("both constructors work");
+       
     }
     
     @After

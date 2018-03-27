@@ -39,6 +39,7 @@ public class MotorTest {
 
      @Test
     public void given_putere_when_putere_is_500() {
+        System.out.println ("given_putere_when_putere_is_500");
         Motor motor = new Motor(500,100,10,"gas");
         int expResult = 500;
         assert(motor.getPutere() == expResult);
@@ -46,32 +47,40 @@ public class MotorTest {
 
     @Test
     public void given_putere_when_setPutere_is_minimum_100_and_maximum_1000() {
+        System.out.println (" given_putere_when_setPutere_is_minimum_100_and_maximum_1000");
         Motor motor = new Motor();
-        motor.setPutere(900);
+        int putere = 900;
+        motor.setPutere(putere);
         assert(motor.getPutere()>=100 && motor.getPutere()<=1000);
     }
 
     @Test
     public void given_turatie_when_turatie_is_300() {
+        System.out.println ("given_turatie_when_turatie_is_300");
         Motor motor = new Motor(100,300,40,"gas");
-        assert(motor.getTuratie()==300);
+        int expResult = 300;
+        assert(motor.getTuratie() == expResult);
     }
 
     @Test
     public void given_turatie_when_setTuratie_is_400() {
+        System.out.println ("given_turatie_when_setTuratie_is_400");
         Motor motor = new Motor();
-        motor.setTuratie(400);
-        assert(motor.getTuratie()==400);
+        int turatie = 400;
+        motor.setTuratie(turatie);
+        assert(motor.getTuratie() == turatie);
     }
 
     @Test
     public void given_capacitate_when_capacitate_is_positive() {
+        System.out.println ("given_capacitate_when_capacitate_is_positive");
         Motor motor = new Motor(100,200,50,"gas");
         assert(motor.getCapacitateCilindrica() > 0);
     }
 
     @Test
     public void given_capacitate_when_setCapacitate_is_positive() {
+        System.out.println ("given_capacitate_when_setCapacitate_is_positive");
         Motor motor = new Motor();
         motor.setCapacitateCilindrica(30);
         assert(motor.getCapacitateCilindrica()>0);
@@ -79,27 +88,18 @@ public class MotorTest {
 
     @Test
     public void given_combustibil_when_combustibil_is_gas() {
+        System.out.println ("given_combustibil_when_combustibil_is_gas");
         Motor motor = new Motor(100,200,30,"gas");
-        assertEquals (motor.getCombustibil(),"gas");
+        String expResult = "gas";
+        assertEquals (motor.getCombustibil(), expResult);
     }
 
     @Test
     public void given_combustibil_when_setCombustibil_is_gas() {
+        System.out.println ("given_combustibil_when_setCombustibil_is_gas");
         Motor motor = new Motor();
-        motor.setCombustibil("gas");
-        assertEquals (motor.getCombustibil(),"gas");
+        String combustibil = "gas";
+        motor.setCombustibil(combustibil);
+        assertEquals (motor.getCombustibil(),combustibil);
     }
-    
-    /*
-    @Test
-    public void testGetPutere() {
-        System.out.println("getPutere");
-        Motor instance = null;
-        int expResult = 0;
-        int result = instance.getPutere();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    */
 }

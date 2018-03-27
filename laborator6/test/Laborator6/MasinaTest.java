@@ -38,40 +38,48 @@ public class MasinaTest {
     public void tearDown() {
     }
 
-     @Test
+    @Test
     public void addComponent() {
     }
 
     @Test
-    public void given_car_when_carIsDacia_then_dacia() {
+    public void given_car_when_marcaDacia_then_dacia() {
+        System.out.println("given_car_when_marcaDacia_then_dacia");
         Masina car = new Masina("dacia", "blue", 1997, 4, 20);
         String color = car.getMarca();
-        assertEquals(color, "dacia");
+        String expResult = "dacia";
+        assertEquals(color, expResult);
     }
 
     @Test
     public void given_car_when_setMarcaDacia_then_dacia() {
+        System.out.println("given_car_when_setMarcaDacia_then_dacia");
         Masina car = new Masina();
         car.setMarca("dacia");
         assertEquals (car.getMarca(), "dacia");
     }
 
     @Test
-    public void given_car_when_carIsBlue_then_blue() {
+    public void given_car_when_CuloareBlue_then_blue() {
+        System.out.println("given_car_when_CuloareBlue_then_blue");
         Masina car = new Masina("dacia", "blue", 1997, 4, 20);
+        String expResult = "blue";
         String color = car.getCuloare();
-        assertEquals (color , "blue");
+        assertEquals (color , expResult);
     }
 
     @Test
     public void given_car_when_setCarCuloareBlue_then_blue() {
+        System.out.println("given_car_when_setCarCuloareBlue_then_blue");
         Masina car = new Masina();
-        car.setCuloare("Blue");
-        assertEquals (car.getCuloare() , "Blue");
+        String color = "Blue";
+        car.setCuloare(color);
+        assertEquals (car.getCuloare() , color);
     }
 
     @Test
-    public void given_car_when_carHasAnProd1998_then_1998() {
+    public void given_car_when_AnProd1998_then_1998() {
+        System.out.println("given_car_when_AnProd1998_then_1998");
         Masina car = new Masina("dacia", "blue", 1998, 4, 20);
         int an = car.getAnProductie();
         assert (an == 1998);
@@ -79,6 +87,7 @@ public class MasinaTest {
 
     @Test
     public void given_car_when_setAnProductie1998_then_1998() {
+        System.out.println("given_car_when_setAnProductie1998_then_1998");
         Masina car = new Masina();
         car.setAnProductie(1998);
         assert (car.getAnProductie() == 1998);
@@ -89,54 +98,49 @@ public class MasinaTest {
      * Test of getNumarUsi method, of class Masina.
      */
     @Test
-    public void testGetNumarUsi() {
-        System.out.println("getNumarUsi");
-        Masina instance = new Masina();
-        int expResult = 0;
-        int result = instance.getNumarUsi();
+    public void given_car_when_numarUsi4_then_4() {
+        System.out.println("given_car_when_numarUsi4_then_4");
+        Masina car = new Masina("dacia", "blue", 1998, 4, 20);
+        int expResult = 4;
+        int result = car.getNumarUsi();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      //  fail("The test case is a prototype.");
+       
     }
 
     /**
      * Test of setNumarUsi method, of class Masina.
      */
     @Test
-    public void testSetNumarUsi() {
-        System.out.println("setNumarUsi");
-        int numarUsi = 0;
+    public void given_car_when_SetNumarUsi4_then_4() {
+        System.out.println("given_car_when_SetNumarUsi4_then_4");
+        int numarUsi = 4;
         Masina instance = new Masina();
         instance.setNumarUsi(numarUsi);
-        // TODO review the generated test code and remove the default call to fail.
-     //   fail("The test case is a prototype.");
+        assertEquals(numarUsi, instance.getNumarUsi());
     }
 
     /**
      * Test of getGarantie method, of class Masina.
      */
     @Test
-    public void testGetGarantie() {
-        System.out.println("getGarantie");
-        Masina instance = new Masina();
-        int expResult = 0;
-        int result = instance.getGarantie();
+    public void given_car_when_garantie10_then_10() {
+        System.out.println("given_car_when_garantie10_then_10");
+        Masina car = new Masina("dacia", "blue", 1998, 4, 20);
+        int expResult = 20;
+        int result = car.getGarantie();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      //  fail("The test case is a prototype.");
     }
 
     /**
      * Test of setGarantie method, of class Masina.
      */
     @Test
-    public void testSetGarantie() {
-        System.out.println("setGarantie");
-        int garantie = 0;
+    public void given_car_when_setGarantie20_then_20() {
+        System.out.println("given_car_when_setGarantie20_then_20");
+        int garantie = 20;
         Masina instance = new Masina();
         instance.setGarantie(garantie);
-        // TODO review the generated test code and remove the default call to fail.
-     //   fail("The test case is a prototype.");
+        assertEquals (garantie, instance.getGarantie());
     }
 
     /**
@@ -161,7 +165,7 @@ public class MasinaTest {
         System.out.println("setComponente");
         ArrayList<Componenta> componente = null;
         Masina instance = new Masina();
-        instance.setComponente(componente);
+     //   instance.setComponente(componente);
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
     }
