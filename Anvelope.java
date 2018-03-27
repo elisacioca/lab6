@@ -1,10 +1,12 @@
-
 public class Anvelope implements Componenta {
     private int Diametru;
     private int Anotimp;
 
 
-   public Anvelope(int _Diametru, int _Anotimp)
+    public Anvelope(){
+    }
+
+    public Anvelope(int _Diametru, int _Anotimp)
     {
         Diametru=_Diametru;
         Anotimp=_Anotimp;
@@ -28,4 +30,3 @@ public class Anvelope implements Componenta {
         Anotimp = _anotimp;
     }
 }
-
