@@ -8,6 +8,9 @@ public class Masina {
     private int garantie;
     private ArrayList<Componenta> componente = new ArrayList<Componenta>();
 
+    public Masina() {
+    }
+
     public Masina(String marca, String culoare, int anProductie, int numarUsi, int garantie){
         this.marca = marca;
         this.culoare = culoare;
